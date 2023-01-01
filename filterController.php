@@ -6,10 +6,12 @@ use App\Services\DataAdapterService;
 
 require __DIR__.'/vendor/autoload.php';
 
+//for use data from api
 $data_service = new DataAdapterService(new GitRepository);
 $response = $data_service->gitRepositories($_POST);
+//for use dummy data 
 $data_service = new DataAdapterService(new DummyRepository);
-$data_service->gitRepositories($_POST);
+//$response = $data_service->gitRepositories($_POST);
 ?>
 <table   class="table thead-dark table-striped table-bordered mt-5">
 	<tr  class="table-primary">

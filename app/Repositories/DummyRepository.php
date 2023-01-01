@@ -8,15 +8,12 @@ class DummyRepository implements DataAdaptorInterface{
     public function getData($inputs)
     {
         return [
-                "total_count"=> 196,
-                "incomplete_results"=> false,
                 "items"=> [
                 [
                     "id"=> 302103040,
                     "node_id"=> "MDEwOlJlcG9zaXRvcnkzMDIxMDMwNDA=",
                     "name"=> "2020-01-954246-lab11-object-oriented-programming-01-yihangmeng",
                     "full_name"=> "camt-mmit/2020-01-954246-lab11-object-oriented-programming-01-yihangmeng",
-                    "private"=> false,
                     "language"=> "PHP"
                 ],
                 [
